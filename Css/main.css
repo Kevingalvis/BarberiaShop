@@ -1,0 +1,707 @@
+@font-face {
+    font-family: 'Magic_Retro';
+    src: url('../Assets/Fonts/Magic\ Retro.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    position: relative;
+    z-index: -10;
+}
+
+/*    ESTILOS DE LA PARTE LOGO Y NOMBRE  */
+.header{
+    width: 100%;
+    height: 120px;
+}
+.divLogo{
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0px 11px 10px -10px rgba(0,0,0,0.75);
+    
+}
+
+.divLogo_imagen{
+    width: 25%;
+    height: 100%;
+}
+.divLogo_imagen img{
+    width: 100%;
+    height: 100%;
+}
+.divLogo_texto{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+       
+}
+
+.divLogo_texto h2{
+    font-size: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+    font-family: 'Magic_Retro';
+}
+.divLogo_texto p{
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+    font-family: 'Magic_Retro';
+
+    color: blue;
+}
+/*FINALIZAMOS EL HEADER LOGO Y NOMBRE*/
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+/*CREAMOS EL MENU*/
+.contNav{
+    width: 100%;
+    height: 50px;
+   
+    position: sticky;
+    top: 0px;
+    z-index: -1;
+}
+.navegador{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #2a2a2afe;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  
+}
+.itemNav{
+    height: 100%;
+    width: 10%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.itemNav:hover{
+    background-color: #004e82;
+}
+.linkNav{
+    color: #f9f9f9;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/*FINALIZAMOS BARRA DE NAVEGACION*/
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+/*SECTION PRINCIPAL */
+.sectHome{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -5;
+}
+
+.artHome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(#000000, #010b134c), url(../Assets/Galleria/Barbero.jpg);
+    background-size: 100% 100%;
+}
+.textHome{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    line-height: 60px;
+}
+.textHome h2{
+    font-family: 'Magic_Retro';
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.textHome p{
+    width: 100%;
+    font-family: 'Magic_Retro';
+    font-weight: 100;
+    letter-spacing: 5px;
+    color: #fff;
+    background-color: #004e8235;
+}
+
+
+.figureHome{
+    width: 25%;
+    height: 40%;
+    
+ 
+}
+.figureHome img{
+    width: 100%;
+    height: 100%;
+}
+
+.parfHome{
+    width: 100%;
+    height: 25%;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+   
+}
+
+/* SERVICOS SERVICIOS */
+.sectService{
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+.service{
+    width: 100%;
+    height: 45px;
+    background-color: #004e82;
+    text-align: center;
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    color: #fff;
+}
+.artService{
+    width: 1200px;
+    height:auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.cardService{
+    width: 40%;
+    height: 500px;
+    margin-bottom: 35px;
+    box-shadow: 0px 9px 15px 0px rgba(3, 109, 209, 0.69);
+    
+ 
+}
+.cardHeader{
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+   
+}
+.cardHeader img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+}
+.cardText{
+    width: 100%;
+    height: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+.cardText h2{
+    padding: 5px;
+    color: #004e82;
+}
+
+.titleCard{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardText p{
+    line-height: 25px;
+    font-style: italic;
+    padding: 15px;
+}
+.cardBtn{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+  
+    text-align: end;
+}
+.btnCard{
+    background-color: #004e82;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;  
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+    
+}
+/*GALERIA*/
+.sectGaleria img{
+    width: 100%;
+    height: auto;
+}
+.sectGaleria{
+    width: 100%;
+    height: auto;
+    background-color: #fdfdfd8f;
+    position: relative;
+    z-index: -3;
+}
+.row{
+    height: auto;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+
+/*nosotros*/
+.sectNosotros{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient( #000000e7, #0000007a),url(../Assets/Galleria/Corte.jpg);
+    object-fit: fill;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: -5;
+}
+.artNosotros{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logoNosotros{
+    width: 50%;
+    height: 50%;
+   
+    text-align: center;
+    
+}
+.logoNosotros img{
+    width: 50%;
+    height: 50%;
+}
+.textNosotros{
+   width: 50%;
+}
+.textNosotros h2{
+    font-family: 'Magic_Retro';
+    font-size: 5rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    color: #f9f9f9;
+}
+.textNosotros p{
+    color: #f9f9f9;
+    font-size: 1.2rem;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-family: 'Magic_Retro';
+    padding: 25px;
+    
+}
+
+/*ubicacion*/
+.sectUbicacion{
+    width: 100%;
+    position: relative;
+    z-index: -5;
+   
+    
+}
+.artUbicacion{
+    width: 90%;
+    height: 100%;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.horario{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    
+  
+    
+}
+.dias{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemDias{
+    list-style: none;
+    background-color: #043759;
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #f9f9f9;
+}
+.hora{
+    width: 35%;
+}
+.itemHora{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #383838;
+}
+.logoUbicacion{
+    width: 25%;
+    height: 100%;
+   
+
+}
+
+.mapUbicacion{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    left: 55px;
+    
+}
+.mapUbicacion p{
+    color: #1d1d1d;
+}
+
+/**/
+.footer{
+    width: 100%;
+    height: 25vh;
+    font-size: 2rem;
+    font-family: 'Magic_Retro';
+    font-weight: 100;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    letter-spacing: 5px;
+    box-shadow: -1px -4px 5px 0px rgba(0,0,0,0.75);
+
+
+}
+
+/* MEDIAS SCREEM PARA TABLET Y PANTALLAS PEQUEÑAS */
+
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+   .divLogo{
+      flex-direction: column;
+      align-items: center;
+   }
+   .divLogo_imagen{
+    height: 60%;
+   }
+   .divLogo_texto{
+    height: 40%;
+    align-items: center;
+   }
+   .divLogo_texto h2{
+    font-weight: 10;
+    font-size: 1rem;
+    line-height: 30px;
+   }
+   .divLogo_texto p{
+    font-size: 0.5rem;
+    font-weight: 100;
+   }
+   /*CREAMOS EL MENU*/
+   .navegador{
+        width: 90%;
+    }
+    .linkNav{
+        font-size: 0.8rem;
+    }
+
+    /*SECTION HOME */
+    .navegador{
+        width: 100%;
+    }
+    .linkNav{
+        font-size: 0.5rem;
+    }
+    /*SECTION HOME*/
+    .textHome{
+      
+    }
+    .textHome h2{
+        font-size: 1.5rem;
+    }
+    .textHome p{
+        font-size: 0.5rem;
+    }
+    .figureHome{
+        width: 70%;
+        height: 40%;
+    }
+    .parfHome{
+        font-size: 1rem;
+        line-height: 30px;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    /*SERVICIOS*/
+    .artService{
+        width: 100%;
+    }
+
+    /*GALERIA*/
+    .column{
+        flex: 50%;
+        
+    }
+    /*NOSOTROS*/
+    .artNosotros{
+        flex-direction: column;
+    }
+    .logoNosotros{
+        width: 60%;
+    }
+    .textNosotros{
+        width: 90%;
+    }
+    .textNosotros h2{
+        font-size: 2.5rem;
+    }
+    .textNosotros p{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    /*UBICACION*/
+    .artUbicacion{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     .horario{
+        width: 100%;
+     }
+     .dias{
+        width: 50%;
+     }
+
+     .itemDias{
+        width: 150px;
+     }
+     .hora{
+        width: 50%;
+     }
+     .itemHora{
+        width: 150px;
+       
+        font-size: 0.7rem;
+        margin-top: 15px;
+     }
+     .logoUbicacion{
+        width: 50%;
+     }
+     .mapUbicacion{
+        width: 80%;
+        position: relative;
+        left: 0;
+     }
+     .mapUbicacion p{
+        font-style: italic;
+        font-size: 0.5rem;
+     }
+    
+     .footer{
+        font-size: 1rem;
+     }
+    
+
+}
+
+/* MEDIAS SCREEM PARA MOBILES */
+
+@media screen and (min-width: 0) and (max-width: 768px)  {
+    .artHome{
+        background-size: 100% 90%;
+    }
+    .divLogo{
+       flex-direction: column;
+       align-items: center;
+    }
+    .divLogo_imagen{
+     height: 60%;
+    }
+    .divLogo_texto{
+     height: 40%;
+     align-items: center;
+    }
+    .divLogo_texto h2{
+     font-weight: 10;
+     font-size: 1rem;
+     line-height: 30px;
+    }
+    .divLogo_texto p{
+     font-size: 0.5rem;
+     font-weight: 100;
+    }
+
+    /*CREAMOS EL MENU*/
+   .navegador{
+        width: 100%;
+    }
+    .linkNav{
+        font-size: 0.5rem;
+    }
+    /*SECTION HOME*/
+    .textHome{
+      
+    }
+    .textHome h2{
+        font-size: 1.5rem;
+    }
+    .textHome p{
+        font-size: 0.5rem;
+    }
+    .figureHome{
+        width: 70%;
+        height: 40%;
+    }
+    .parfHome{
+        font-size: 0.5rem;
+        line-height: 20px;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    /*SERVICIO*/
+    
+    /*SERVICIOS*/
+    .artService{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardService{
+        width: 90%;
+    }
+    .cardText h2{
+        font-size: 1rem;
+    }
+    .cardText p{
+        font-size: 0.8rem;
+    }
+    .btnCard{
+        padding: 10px;
+    }
+    .column{
+        flex: 50%;
+    }
+    .h2Galeria{
+        font-size: 0.5rem;
+    }
+
+    /*NOSOTROS*/
+    .artNosotros{
+        flex-direction: column;
+    }
+    .logoNosotros{
+        width: 60%;
+    }
+    .textNosotros{
+        width: 90%;
+    }
+    .textNosotros h2{
+        font-size: 2.5rem;
+    }
+    .textNosotros p{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    /*UBICACION*/
+    .artUbicacion{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     .horario{
+        width: 100%;
+     }
+     .dias{
+        width: 50%;
+     }
+
+     .itemDias{
+        width: 150px;
+     }
+     .hora{
+        width: 50%;
+     }
+     .itemHora{
+        width: 150px;
+       
+        font-size: 0.7rem;
+        margin-top: 15px;
+     }
+     .logoUbicacion{
+        width: 50%;
+     }
+     .mapUbicacion{
+        width: 80%;
+        position: relative;
+        left: 0;
+     }
+     .mapUbicacion p{
+        font-style: italic;
+        font-size: 0.5rem;
+     }
+    
+     .footer{
+        font-size: 1rem;
+     }
+
+ }
